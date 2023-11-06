@@ -1,4 +1,5 @@
 package src;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,6 +11,23 @@ public class Main {
         System.out.println(caine2.getBreed());
         caine2.setBreed("Husky");
         System.out.println(caine2.getBreed());;
+
+        Person persoana1= new Person();
+        persoana1.setName("Andrei");
+        persoana1.setEmail("andrei@gmail.com");
+
+        Student student1 = new Student();
+        student1.setName("Paul");
+        student1.setEmail("paul@gmail.com");
+        student1.setGrades(new int[] { 95, 87, 92 });
+        System.out.println(Arrays.toString(student1.getGrades()));
+
+        Profesor profesor1 = new Profesor();
+        profesor1.setName("Marian");
+        profesor1.setEmail("marian@gmail.com");
+        profesor1.setCourses(new String[] {"mate","info"});
+        System.out.println(java.util.Arrays.toString(profesor1.getCourses()));
+
     }
     public static int afisIntreg(int n){
         int sum=0;
