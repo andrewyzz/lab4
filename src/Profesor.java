@@ -2,7 +2,6 @@ package src;
 
 public class Profesor extends Person{
     public String[] courses;
-
     public String[] getCourses(){
         return this.courses;
     }
